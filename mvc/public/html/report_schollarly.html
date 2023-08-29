@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Scholarly</title>
+    <link rel="stylesheet" href="userguide.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style type="text/css" media="screen">
+        h2 {
+            font-size: 2.5em;
+            color: #2c3e50;
+        }
+        h3{
+            font-size: 1.8em;
+            color: #4375a7;  
+        }
+        h1 {
+            margin-top: 1em;
+            font-size: 3em;
+            color: #2c3e50;
+            font-style: inherit;
+        }
+        body{
+        background: #a0a3a3;
+  padding: 40px 0;
+  background-size: cover;
+  display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: auto;
+    max-width: 500px;
+    padding: 10px 10px 10px 10px;
+    
+
+
+}
+
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Scholarly HTML report</h1><br>
+        <section typeof="sa:AuthorsList">
+            <h2>Resurse:</h2>
+            <a href="https://github.com/Ionescu-Emi/WebProject">
+                github.io
+             </a>
+            <h2>Autori</h2>
+            <ul>
+                <li >
+                   <span>
+                     Filioreanu Marius
+                   </span><br>
+                   <a href="skydubz9@gmail.com">
+                      skydubz9@gmail.com
+                   </a>
+                </li>
+                
+            </ul>
+            
+        </section>
+    </header>
+
+    <h2>Cuprins</h2>
+<ol role="directory">
+        <li>
+            <a href="#abstract">
+                <span> Abstract </span>
+                
+            </a>
+        </li>
+       <li>
+
+
+         <a href="#cerinta">
+            <span> Cerinta proiect </span>
+        
+           </a>
+        </li>
+     
+     <li>
+         
+        <a href="#dezvoltare_proiect">
+            <span> Dezvoltare proiect </span>
+        
+           </a>
+       <ol>
+        <li>
+
+
+            <a href="#database">
+               <span>Baza de date </span>
+           
+              </a>
+           </li>
+           <li>
+
+
+            <a href="#functionalitati">
+               <span> Functionalitati aplicatie </span>
+           
+              </a>
+           </li>
+           
+           <li>
+
+
+            <a href="#functionalitati_admin">
+               <span> Functionalitati pentru admin </span>
+           
+              </a>
+           </li>
+        </ol>
+     </li>
+         <li>
+         
+        <a href="#extern">
+            <span> Continut extern </span>
+        
+           </a>
+     </li>
+
+     </ol>
+
+
+     <section>
+        <h2 id="abstract">1.Abstract</h2><br>
+        <p>Scholarly HTML is a domain-specific rich document format built entirely on 
+            <br>open standards that enables the interoperable exchange of scholarly articles in a manner that is compatible with off-the-shelf browsers..
+        </p><br>
+    </section> 
+         <section>
+
+        
+        <h2 id="cerinte">2.Cerinta proiect</h2><br>
+        <p>  
+         Sa se dezvolte o aplicatie Web pentru gestiunea vizitelor de care beneficiaza
+         persoanel condamnate la executarea unei pedepse intr-un penitenciar sau intr-o casa de corectie
+         <br>
+         Fiecarei vizite i sevor atasa informatii privind individul care efectueaza vizita
+         --minimal se vor considera:identitatea,fotografia,relatia cu condamnatul
+         (ruda,tutore,avocat,prieten),natura vizitei.
+         <br>
+         De asemenea,vor fi consemnate:data realizarii vizitei,natura si durata acesteia,
+         posibile obiecte/date furnizate condamnatului sau oferite de condamnat vizitatorului,
+         rezumatul discutiilor efectuate.
+         Instrumentul implementat va genera statistici--documente HTML,CSV,JSON--
+         vizand vizitele realizate per individ,perioada de timp.
+        </p><br>
+    </section>
+
+    <section>
+        <h3>Limbaje folosite</h3>
+        <ul>
+
+            <li><strong>HTML5</strong> utilizat pentru structurarea continutului</li>
+            <li><strong>CSS/CSS3</strong> utilizat pentru stilizarea paginilor</li>
+            <li><strong>JavaScript, Ajax</strong></li>
+            <li><strong>PHP</strong> utilizat pentru back-end, pentru comunicarea cu serverul Apache si baza de date MySQL</li>
+            <li><strong>MySQL</strong> utilizat pentru managementul bazei de date</li>
+        </ul>
+    </section>
+
+    <section id="dezvoltare_proiect">
+        <h2>3.Dezvoltare proiect</h2>
+         <h3 id="database">3.1.Baza de date</h3>
+         <h4>Tabele baza de date:</h4>
+         <ul>
+             <li>
+               <strong>Users:</strong>  stocarea userilor
+
+             </li>
+             <li>
+                <strong>Visits:</strong> stocarea vizitelor
+            </li>
+            <li>
+                <strong>Detained:</strong> stocarea detinutilor din penitenciar
+            </li>
+            <li>
+                <strong>Comments:</strong> stocarea comentariilor lasate de useri
+            </li>
+         </ul>
+         <img src="css/images/t0.jpg" height=200px width=200px>
+         <img src="css/images/t1.jpg" height=350px width=700px>
+          <p>  Am stabilit structura proiectului si aspectele necesare pentru funcionarea proiectului
+               Am creat o baza de date de tip MySQL cu diferite tabele(users,visits,detained,comments) Am realizat un model de aplicatie actori,roluri si diagrame uml pentru a identifica mai usor fiecare componenta a proiectului.
+            <br> 
+            Am inceput cu realizarea paginilor pentru
+            user,si stilizarea acestora. Aplicatia urma sa fie dezvolatata dupa acel model. 
+            </p>
+
+
+
+    </section>
+    <section>
+        <h3>Database Diagram</h3>
+        <figure typeof="image">
+            <img width="500" height="500" src="css/images/database_diagram.jpg" alt="Database Diagram">
+        </figure>
+    </section>
+    <section>
+        <h3>Use Case Diagram</h3>
+        <figure typeof="image">
+            <img width="600" height="500" src="css/images/use_case_diagram.jpg" alt="Use Case Diagram">
+        </figure>
+    </section>
+    <section>
+        <h3>3.2.Functionalitati aplicatie</h3>
+
+        <ul>
+            <li><strong>Register</strong> utilizatorii se pot inregistra si 
+                loga in aplicatie pentru a putea crea o noua vizita,altfel 
+                poate vizualiza numai homepage.
+            </li>
+          <img src="css/images/m2.jpg">
+            <li><strong>Login</strong> utilizatorii se pot loga in aplicatie 
+                pentru a putea crea o noua vizita,pentru a vizualiza visitele sale.
+            </li>
+            <img src="css/images/m3.jpg">
+
+            <li><strong>New visit</strong> utilizatorii pot crea o noua vizita
+            </li>
+            <img src="css/images/m6.jpg">
+            <li><strong>My visits</strong> utilizatorii pot vizualiza lista cu vizitele
+                lor,pot sterge o anumita vizita,si downloada in format csv,lista vizitelor lor.
+            </li>
+            <img src="css/images/m7.jpg">
+            <li><strong>Statistics</strong> Admin pot vizualiza diverse
+                 statistici despre vizite,pe categorii:
+                 <ul>
+                     <li>
+                         numar de vizite de familie
+                     </li>
+                     <li>
+                        numar de vizite de plan legal
+                    </li>
+                    <li>
+                        numar de vizite de prietenie
+                    </li>
+                    <li>
+                        numar de vizite facute de avocat
+                    </li>
+                    <li>
+                        numar de vizite facute de rude
+                    </li>
+                    <li>
+                        numar de vizite facute de prieteni
+                    </li>
+                 </ul>
+                 <img src="css/images/m11.jpg">
+                 </li>
+
+            <li><strong>Contact</strong> utilizatorii ne pot contacta prin email.</li>
+            <img src="css/images/m4.jpg">
+            <li><strong>Homepage</strong>
+                
+                <ul>
+                    <li>
+                        Userii pot genera un citat random prin apasare de buton,fara a da reload pagini_inainte_logare
+          
+                    </li>
+                    <img src="css/images/mh1.jpg">
+                    <li>
+                        Userii pot vizualiza o galerie e imagini si downloada imaginile
+                    </li>
+                    <img src="css/images/ss2.jpg">
+                    <li>
+                        se pot vizualiza cele mai noi informatii despre cele mai noi vloguri de pe youtube
+                    </li>
+                    <img src="css/images/mh2.jpg">
+                </ul>  </li>
+
+            <li><strong>Modul de administrare</strong>
+                
+                <ul>
+<li>
+    Administratorul poate vizualiza toti userii,vizitele si detinutii
+       
+</li>
+<img src="css/images/m10.jpg">
+<li>
+    Administratorul poate sterge orice cont de user,odata cu stergerea unui cont se vor sterge si vizitele acestuia
+</li>
+<img src="css/images/m9.jpg">
+       <li>
+           Administratorul poate downloada liste in format csv cu toate vizitele,toti userii si toti detinutii
+       </li>
+<li>
+Administratorul poate downloada statistici despre visite
+</li>
+<li>
+Administratorul poate vizualiza un clasament  top 3 cele mai lungi condamnari
+</li>
+<img src="css/images/m12.jpg">
+<li>
+Administratorul poate downloada lista in format csv cu toate vizitele unui anumit detinut
+</li>
+   </ul>    
+</li>
+
+ 
+       
+       
+</ul>
+
+
+    </section>
+
+
+<section id="extern">
+
+    <h2>4.Continut extern</h2><br>
+    <p>Acest proiect a fost realizat cu ajutorul unor surse externe. Ca urmare dorim sa le multumim:<br> •
+        <a href="https://creately.com/">Creately</a>
+        <p>Pentru realizarea diagrame uml.</p>
+</section>
+
+
+
+
+
+     </body>
+</html>

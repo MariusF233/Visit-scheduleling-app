@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>New_visit</title>
+        <link rel="stylesheet" href="./new_visit_style.css" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:700,600" rel="stylesheet" type="text/css">
+        
+            <nav class="navPanel">
+                <ul class="menu_items">
+                    <li class="menu_item">
+                        <a id="a1" href="homepage.html">
+                            <h5>HOMEPAGE</h5>
+                        </a>
+                    </li>
+                    <li class="menu_item">
+                        <a href="new_visit.html">
+                            <h5>NEW VISIT</h5>
+                        </a>
+                    </li>
+                    <li class="menu_item">
+                        <a href="register.html">
+                            <h5>REGISTER</h5>
+                        </a>
+                    </li>
+                    <li class="menu_item">
+                        <a href="contact.html">
+                            <h5>CONTACT US</h5>
+                        </a>
+                    </li>
+                    <li class="menu_item">
+                        <a href="schollarly.html">
+                            <h5>USER GUIDE(schollarly html)</h5>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        
+        <div class="new_visit_section">
+            <h1>NEW VISIT</h1>
+            <form class="new_visit_form" method="post" action="new_visit.php">
+                <div class="border_line"></div>
+                <label > full name:</label>
+                <input
+                    type="text"
+                    name="username"
+                    class="new_visit_form_text"
+                    placeholder="your  full name"
+                >
+                <label >your picture:</label>
+                <button type="submit" name="photo" class="photo_btn">Upload your photo</button>
+                <div class="meeting_data">
+                    <div class="select_area">
+                        <label >Your relationship with the detained:</label>
+                        <select name="relationship">
+                            <option value="">Your relation to the detained</option>
+                            <option value="relative">relative</option>
+                            <option value="tutor">tutor</option>
+                            <option value="lawyer">lawyer</option>
+                            <option value="friend">friend</option>
+                        </select>
+                    </div>
+                    <div class="nature_area">
+                        <label>Nature of the meeting:</label>
+                        <div>
+                            <input type="radio" name="family_meeting" value="family_meeting">
+                            <label >Family meeting</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="legal_planning_meeting" value="legal_planning_meeting">
+                            <label >Legal planning meeting</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="casual_meeting" value="casual_meeting">
+                            <label >Casual meeting</label>
+                        </div>
+                    </div>
+                </div>
+                <h4>Select visit date:</h4>
+                <div class="meeting_time">
+                    <div class="select_time_area">
+                        <div class="time_cell">
+                            <label >day:</label>
+                            <select name="day">
+                                <option value="day">day</option>
+                            </select>
+                        </div>
+                        <div class="time_cell">
+                            <label >month:</label>
+                            <select name="month">
+                                <option value="month">month</option>
+                            </select>
+                        </div>
+                        <div class="time_cell">
+                            <label >year:</label>
+                            <select name="year">
+                                <option value="year">year</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="duration_area">
+                        <label>Select meeting duration:</label>
+                        <div>
+                            <input type="radio" name="30_minutes" value="30_minutes">
+                            <label >30 minutes</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="60_minutes" value="60_minutes">
+                            <label >60 minutes</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="90_minutes" value="90_minutes">
+                            <label >90 minutes</label>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h4>Possible objects given to the detained:</h4>
+                    <textarea class="new_visit_form_text" placeholder="object list"></textarea>
+                </div>
+                <div>
+                    <h4>Witnesses at the meeting:</h4>
+                    <textarea class="new_visit_form_text" placeholder="witness list"></textarea>
+                </div>
+                <button type="submit" name="register" class="submit_btn"> Submit</button>
+            </form>
+        </div>
+        <footer>
+            <div class="social_menu">
+                <div class="media_button">
+                    <a href="#">
+                        <img src="images/image8.png" alt="image8">
+                    </a>
+                </div>
+                <div class="media_button">
+                    <a href="#">
+                        <img src="images/image7.png" alt="image7">
+                    </a>
+                </div>
+                <div class="media_button">
+                    <a href="#">
+                        <img src="images/image9.png" alt="image9">
+                    </a>
+                </div>
+                <div class="media_button">
+                    <a href="#">
+                        <img src="images/image10.png" alt="image10">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
